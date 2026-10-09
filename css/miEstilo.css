@@ -1,0 +1,72 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.titulo{
+position: sticky;
+  top: 0; 
+  color: rgb(239, 19, 3);
+  padding: 15px 20px;
+  text-align: center;
+  z-index: 1000; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contenido{
+    height: 100vh;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    /*efecto de posicion fija*/
+    background-attachment: fixed;
+}
+
+#zona1{
+    background-image: url('../images/spiderman_1.png');
+}
+#zona2{
+    background-image: url('../images/spiderman_2.png');
+}
+#zona3{
+    background-image: url('../images/spiderman_3.png');
+}
+#zona4{
+    background-image: url('../images/spiderman_4.png');
+}
+#zona5{
+    background-image: url('../images/spiderman_5.png');
+}
+
+/*menu*/
+nav{
+    position: fixed;
+    left: 200px;
+    top: 30%;
+    z-index: 100;
+    transition: 0.4 ease;
+    transform: translateX(-50%);
+}
+ul{
+    list-style: none;
+}
+ul a{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    height: 40px;
+    border: 4px solid black;
+    width: 150px;
+    text-align: center;
+    padding: 10px 0;
+    transition: 0.5 ease;
+}
+
+ul a:hover{
+    background-color: rgb(255, 89, 0);
+    color: black;
+    transform: translateX(10%);
+}
